@@ -5,8 +5,6 @@
  * @author Derek S. Prijatelj
  */
 
-var hintInput; // being global may be undesirable 
-
 /**
  * applies the EventListener to the element with the id "hintSwitch". When
  * hintSwitch is activated, then it will generate the hintEditor
@@ -75,8 +73,8 @@ function toggleHintEditor(objButton){
 }
 
 /**
- * saves the contents of the hintInput to a local, client-side, js var.
+ * Sends content of hint to funciton that translates to PG code.
  */
 function saveHint(){
-    hintInput = document.getElementById("hintInput").value;
+    translateToPG(document.getElementById("hintInput").value);
 }
