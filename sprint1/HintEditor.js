@@ -33,7 +33,7 @@ function hintSwitchListener(){
  * selecting the proper hint number in the drop down. select add hint if
  * want to add a new hint.
  */
-function toggleHintEditor(){
+function toggleHintEditor(objButton){
     /*
      * TODO
      * Currently displays a single text box to write all hints. If want multiple
@@ -59,6 +59,8 @@ function toggleHintEditor(){
         ].join('');
 
         hintEditor.innerHTML = addedHTML;
+        
+        objButton.innerHTML = "Remove Hint";
 
         document.getElementById("saveHint")
             .addEventListener("click", saveHint, false);
@@ -68,6 +70,7 @@ function toggleHintEditor(){
 
         hintEditor.innerHTML = "";
         hintInput = "";
+        objButton.innerHTML = "Add Hint";
     }
 }
 
