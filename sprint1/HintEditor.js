@@ -75,4 +75,14 @@ function saveHint(){
  * of the problem, otherwise a location in the problem will need set via editor.
  */
 function uploadImage(){
+
+    // navigate to proper problem set
+    
+    // call browser function
+
+    // need to save file name, size, and location to be inserted into PG code.
+
+    // call upload function
+
+
 }
