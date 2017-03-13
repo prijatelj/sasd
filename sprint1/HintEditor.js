@@ -63,7 +63,8 @@ function toggleHintEditor(objButton){
  * Sends content of hint to funciton that translates to PG code.
  */
 function saveHint(){
-    translateToPG(document.getElementById("hintInput").value);
+    translateToPG(document.getElementById("hintInput").value, hintImgDataArr,
+        mainImgDataArr);
 }
 
 /**
